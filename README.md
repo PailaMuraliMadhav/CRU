@@ -21,25 +21,6 @@ dotenv
 
 CORS
 
-🛠️ Getting Started
-1. Clone the repository
-bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
-2. Install dependencies
-bash
-npm install
-3. Configure environment variables
-Create a .env file in the root directory:
-
-text
-PORT=8080
-MONGO_URI=your_mongodb_connection_string
-4. Start the server
-bash
-npm run dev
-The server runs at http://localhost:8080.
-
 📚 API Endpoints
 Method	Endpoint	Description
 POST	/api/v1/todos	Create a new todo
