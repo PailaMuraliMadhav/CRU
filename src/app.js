@@ -1,14 +1,11 @@
-import express from "express";
-import cors from "cors";
+// src/app.js
+import express from 'express';
+import TodoRoutes from './routes/Todoroutes.js';
 
 const app = express();
 
-app.use(cors());
 app.use(express.json());
-
-// Example route
-app.get("/", (req, res) => {
-  res.send("✅ Backend is working!");
-});
+app.use('/api/v1/todos', TodoRoutes);
+app.get('/', (req, res) => res.send('API is running 🚀'));
 
 export default app;
